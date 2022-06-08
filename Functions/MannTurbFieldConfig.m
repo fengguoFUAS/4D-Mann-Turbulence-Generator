@@ -17,7 +17,7 @@
 % dy          = 6;    % steps size in y
 % dz          = 6;    % steps size in z
 % seed        = seednum;    % seed number
-% HRef        = 108;  % horizontal wind speed
+% HRef        = 108;  % reference height
 
 
 function Turbulence = MannTurbFieldConfig(TurbSizeName,Turbulence,t_upstream,seednum)
@@ -37,7 +37,7 @@ Turbulence.Field.dx          = 8;    % steps size in x
 Turbulence.Field.dy          = 6;    % steps size in y
 Turbulence.Field.dz          = 6;    % steps size in z
 Turbulence.Field.seed        = seednum;    % seed number
-Turbulence.Field.HRef        = 108;  % horizontal wind speed
+Turbulence.Field.HRef        = 108;  % reference height
 
 Turbulence.Field.dt          = Turbulence.Field.dx/Turbulence.URef;   % time step
 Turbulence.Field.T           = (Turbulence.Field.n1-1)*Turbulence.Field.dt; % length in time
@@ -60,7 +60,7 @@ Turbulence.Field.dx          = 8;    % steps size in x
 Turbulence.Field.dy          = 4.5;    % steps size in y
 Turbulence.Field.dz          = 4.5;    % steps size in z
 Turbulence.Field.seed        = seednum;    % seed number
-Turbulence.Field.HRef        = 119;  % horizontal wind speed
+Turbulence.Field.HRef        = 119;  % reference height
 
 Turbulence.Field.dt          = Turbulence.Field.dx/Turbulence.URef;   % time step
 Turbulence.Field.T           = (Turbulence.Field.n1-1)*Turbulence.Field.dt; % length in time
@@ -83,7 +83,7 @@ Turbulence.Field.dx          = 2;    % steps size in x
 Turbulence.Field.dy          = 2;    % steps size in y
 Turbulence.Field.dz          = 2;    % steps size in z
 Turbulence.Field.seed        = seednum;    % seed number
-Turbulence.Field.HRef        = 119;  % horizontal wind speed
+Turbulence.Field.HRef        = 119;  % reference height
 
 Turbulence.Field.dt          = Turbulence.Field.dx/Turbulence.URef;   % time step
 Turbulence.Field.T           = (Turbulence.Field.n1-1)*Turbulence.Field.dt; % length in time
